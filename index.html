@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N+ | Build anything. Simply.</title>
+    <meta name="description" content="N+ is a clean, approachable programming language for web apps, servers, automation, AI and developer tools.">
+    <meta property="og:title" content="N+ Programming Language">
+    <meta property="og:description" content="Build anything. Simply.">
+    <link rel="icon" href="assets/nplus-logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/nplus-logo.png" alt="N+ Logo">
+                <span>N+</span>
+            </div>
+            <div class="links">
+                <a href="#language">Language</a>
+                <a href="#ecosystem">Ecosystem</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#" class="btn btn-nav download-btn">Download</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero fade-up">
+            <div class="hero-content">
+                <h1>Build anything.<br><span class="text-glow">Simply.</span></h1>
+                <p>N+ is a clean, approachable programming language for web apps, servers, automation, AI and developer tools.</p>
+                <div class="button-group">
+                    <button class="btn btn-primary download-btn">Download N+</button>
+                    <a href="#" class="btn btn-secondary">GitHub</a>
+                    <a href="#" class="btn btn-secondary">Documentation</a>
+                </div>
+            </div>
+            <div class="hero-terminal">
+                <div class="terminal-header">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <span class="terminal-title">hello.npl</span>
+                </div>
+                <div class="terminal-body">
+                    <code><span class="kw">let</span> name = <span class="str">"N+"</span><span class="term">*</span></code><br>
+                    <code>print(<span class="str">"Hello from {name}!"</span>)<span class="term">*</span></code>
+                    <div class="terminal-output">
+                        > Hello from N+!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why" class="fade-up">
+            <h2>Why N+?</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Readable</h3>
+                    <p>Syntax designed to be instantly understood, minimizing cognitive load.</p>
+                </div>
+                <div class="card">
+                    <h3>Practical</h3>
+                    <p>Built for shipping real-world applications, tools, and infrastructure quickly.</p>
+                </div>
+                <div class="card">
+                    <h3>Fast to ship</h3>
+                    <p>A compiler and ecosystem built to get out of your way.</p>
+                </div>
+                <div class="card">
+                    <h3>AI-ready</h3>
+                    <p>Designed with modern workflows and intelligent tooling in mind.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="language" class="fade-up">
+            <h2>The Language</h2>
+            <p class="section-desc">N+ supports modern paradigms with a clean foundation.</p>
+            
+            <div class="features-list-grid">
+                <ul>
+                    <li>Variables & Types</li>
+                    <li>Functions & Expressions</li>
+                    <li>Conditions & Loops</li>
+                    <li>Strings</li>
+                </ul>
+                <ul>
+                    <li>Async programming <span class="badge">Planned</span></li>
+                    <li>Modules</li>
+                    <li>Error handling</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="syntax" class="fade-up">
+            <h2>Syntax & Code Examples</h2>
+            
+            <div class="tabs">
+                <button class="tab-btn active" onclick="openTab('tab-basics')">Basics</button>
+                <button class="tab-btn" onclick="openTab('tab-funcs')">Functions</button>
+                <button class="tab-btn" onclick="openTab('tab-loops')">Control Flow</button>
+            </div>
+
+            <div id="tab-basics" class="code-panel active">
+                <button class="copy-btn">Copy</button>
+                <pre><code><span class="kw">let</span> name = <span class="str">"N+"</span><span class="term">*</span>
+<span class="kw">let</span> age = <span class="num">13</span><span class="term">*</span>
+
+<span class="kw">if</span> age >= <span class="num">13</span> {
+    print(<span class="str">"Hello!"</span>)<span class="term">*</span>
+}</code></pre>
+            </div>
+
+            <div id="tab-funcs" class="code-panel" style="display:none;">
+                <button class="copy-btn">Copy</button>
+                <pre><code><span class="kw">fn</span> add(a: <span class="type">int</span>, b: <span class="type">int</span>) -> <span class="type">int</span> {
+    <span class="kw">return</span> a + b<span class="term">*</span>
+}</code></pre>
+            </div>
+
+            <div id="tab-loops" class="code-panel" style="display:none;">
+                <button class="copy-btn">Copy</button>
+                <pre><code><span class="comment">// For loop</span>
+<span class="kw">for</span> i <span class="kw">in</span> <span class="num">1</span>..<span class="num">6</span> {
+    print(i)<span class="term">*</span>
+}
+
+<span class="comment">// While loop</span>
+<span class="kw">while</span> score < 10 {
+    score = score + <span class="num">1</span><span class="term">*</span>
+}</code></pre>
+            </div>
+        </section>
+
+        <section id="terminators" class="fade-up">
+            <h2>Statement Terminators</h2>
+            <div class="card terminal-card">
+                <p>N+ supports explicit line terminators to keep syntax unambiguous:</p>
+                <ul class="feature-list">
+                    <li><code>*</code> is the preferred standard terminator.</li>
+                    <li><code>!</code> is an alternative terminator.</li>
+                </ul>
+                <pre class="mt-2"><code>print(<span class="str">"Hello"</span>)<span class="term">*</span>
+print(<span class="str">"World"</span>)<span class="term">!</span></code></pre>
+            </div>
+        </section>
+
+        <section id="web" class="fade-up">
+            <h2>N+ Web</h2>
+            <p class="section-desc">Web development, built into the ecosystem. <span class="badge">In Development</span></p>
+            <div class="card">
+                <p>N+ is designed to natively support HTTP, APIs, Static websites, Routes, JSON, and Full-stack development without wrestling with complex configurations.</p>
+            </div>
+        </section>
+
+        <section id="ecosystem" class="fade-up">
+            <h2>Ecosystem</h2>
+            <div class="grid">
+                <div class="card">Web</div>
+                <div class="card">AI</div>
+                <div class="card">Discord Bots</div>
+                <div class="card">Minecraft Tools</div>
+                <div class="card">Databases</div>
+                <div class="card">CLI</div>
+                <div class="card">Automation</div>
+                <div class="card">VS Code</div>
+            </div>
+        </section>
+
+        <section id="vscode" class="fade-up flex-section">
+            <div class="flex-content">
+                <h2>VS Code Integration</h2>
+                <p>N+ supports <code>.npl</code> files with a dedicated VS Code extension.</p>
+                <ul class="feature-list">
+                    <li>Syntax highlighting</li>
+                    <li>Official N+ file icons</li>
+                    <li>Snippets & Run commands</li>
+                    <li>Diagnostics</li>
+                    <li>Future language server & AI assistance</li>
+                </ul>
+            </div>
+            <div class="flex-image">
+                <img src="assets/nplus-logo.png" alt=".npl Icon" class="file-icon pulse">
+                <p class="text-muted mt-1">.npl extension</p>
+            </div>
+        </section>
+
+        <section id="ai" class="fade-up">
+            <h2>N+ AI <span class="badge">Experimental</span></h2>
+            <div class="card border-primary">
+                <h3>Intelligent Assistance</h3>
+                <p>Upcoming integration ecosystem to help you:</p>
+                <div class="tag-cloud">
+                    <span>Explain code</span>
+                    <span>Fix errors</span>
+                    <span>Generate code</span>
+                    <span>Generate tests</span>
+                    <span>Optimize</span>
+                    <span>Refactor</span>
+                    <span>Documentation</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="fade-up">
+            <h2>Roadmap</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Released</h3>
+                    <ul class="feature-list">
+                        <li>Language Core (Rust Compiler)</li>
+                        <li>VS Code Extension</li>
+                    </ul>
+                </div>
+                <div class="card border-yellow">
+                    <h3>In Development</h3>
+                    <ul class="feature-list">
+                        <li>N+ Web</li>
+                        <li>Developer Tooling</li>
+                    </ul>
+                </div>
+                <div class="card border-primary">
+                    <h3>Planned</h3>
+                    <ul class="feature-list">
+                        <li>Package Ecosystem</li>
+                        <li>AI Integrations</li>
+                        <li>Native Compilation</li>
+                        <li>Future Platforms</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta fade-up">
+            <h2>Ready to build?</h2>
+            <div class="button-group">
+                <button class="btn btn-primary download-btn">Download N+ v1.0.0</button>
+                <button class="btn btn-secondary download-btn">GitHub Release</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>N+ by Netrix Development</p>
+            <div class="footer-links">
+                <a href="#">GitHub</a>
+                <a href="#">Documentation</a>
+                <a href="https://netrixdevs.ice.lol">Netrix Development</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
