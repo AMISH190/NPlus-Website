@@ -2,7 +2,7 @@
 // CONFIGURATION
 // ==========================================
 // Update this single variable to change the download destination across the entire site.
-const NPLUS_GITHUB_RELEASE = "https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases/latest";
+const NPLUS_GITHUB_RELEASE = "https://github.com/AMISH190/Netrix-Code-Language/releases/tag/v1.0.0";
 
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Assign Download Links
