@@ -1,7 +1,7 @@
 # N+ Programming Language Website
 
 Official website for the N+ programming language ecosystem.
-Domain: [https://nplus.dedyn.io](https://nplus.dedyn.io)
+Domain: [https://nplus.devs.surf](https://nplus.devs.surf)
 
 ## Tech Stack
 - HTML5
@@ -12,4 +12,4 @@ Domain: [https://nplus.dedyn.io](https://nplus.dedyn.io)
 The GitHub release URL is stored in a single variable at the top of `script.js`.
 To update where the download buttons point, edit this line in `script.js`:
 ```javascript
-const NPLUS_GITHUB_RELEASE = "[https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases/latest](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases/latest)";
+const NPLUS_GITHUB_RELEASE = "[https://github.com/AMISH190/Netrix-Code-Language/releases/tag/v1.0.0](https://github.com/AMISH190/Netrix-Code-Language/releases/tag/v1.0.0)]";
